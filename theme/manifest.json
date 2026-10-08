@@ -1,0 +1,126 @@
+{
+  "manifest_version": 3,
+  "name": "Graffiti Neon Street",
+  "version": "1.0.0",
+  "description": "Dark-mode street-art theme: neon green and pink graffiti wall with deep-green, AAA-contrast tabs and toolbar.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "theme": {
+    "images": {
+      "theme_frame": "images/frame.png",
+      "theme_frame_inactive": "images/frame.png",
+      "theme_ntp_background": "images/ntp.png"
+    },
+    "colors": {
+      "frame": [
+        11,
+        31,
+        10
+      ],
+      "frame_inactive": [
+        11,
+        31,
+        10
+      ],
+      "frame_incognito": [
+        28,
+        31,
+        29
+      ],
+      "frame_incognito_inactive": [
+        28,
+        31,
+        29
+      ],
+      "toolbar": [
+        14,
+        41,
+        13
+      ],
+      "tab_text": [
+        255,
+        255,
+        255
+      ],
+      "tab_background_text": [
+        200,
+        255,
+        217
+      ],
+      "tab_background_text_inactive": [
+        200,
+        255,
+        217
+      ],
+      "background_tab_text": [
+        200,
+        255,
+        217
+      ],
+      "bookmark_text": [
+        255,
+        255,
+        255
+      ],
+      "toolbar_text": [
+        255,
+        255,
+        255
+      ],
+      "toolbar_button_icon": [
+        255,
+        255,
+        255
+      ],
+      "omnibox_background": [
+        6,
+        20,
+        5
+      ],
+      "omnibox_text": [
+        255,
+        255,
+        255
+      ],
+      "ntp_background": [
+        6,
+        20,
+        5
+      ],
+      "ntp_text": [
+        255,
+        255,
+        255
+      ],
+      "ntp_link": [
+        57,
+        255,
+        136
+      ],
+      "ntp_header": [
+        14,
+        41,
+        13
+      ],
+      "button_background": [
+        14,
+        41,
+        13
+      ]
+    },
+    "tints": {
+      "buttons": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "properties": {
+      "ntp_background_alignment": "center",
+      "ntp_background_repeat": "no-repeat"
+    }
+  }
+}
