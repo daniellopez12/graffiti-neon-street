@@ -2,3 +2,5 @@ dist/
 __pycache__/
 *.crx
 *.pem
+# Written by Chromium when the unpacked theme is loaded
+theme/Cached Theme.pak
