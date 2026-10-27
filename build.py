@@ -33,7 +33,7 @@ STORE_DIR = OUT / "store"
 DIST_DIR = OUT / "dist"
 SOURCE_IMAGE = OUT / "source/wall.jpg"
 NAME = "Graffiti Neon Street"
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 IMAGE_W, IMAGE_H, FEATHER = 2400, 1200, 110
 # Consonant-only letters sampled without replacement can't spell words.
 LETTERS = "BKRSTZXWMQVHJ"
