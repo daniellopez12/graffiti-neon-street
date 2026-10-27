@@ -42,9 +42,12 @@ WIDTHS = {"M": .92, "W": 1.0, "J": .5, "Z": .62, "S": .6, "T": .6, "V": .68, "X"
 COLORS = {
     "bg": "#2b2f2d",
     "frame": "#0b1f0a",
-    "toolbar": "#0e290d",
+    # Active tab/toolbar is lifted well above the frame so the selected tab is
+    # obvious, while white text on it stays AAA (>= 7:1).
+    "toolbar": "#1d6020",
     "tab_text": "#ffffff",
-    "inactive_text": "#c8ffd9",
+    # Dimmer than the active tab's white text but still AAA on the frame.
+    "inactive_text": "#aed9b8",
     "accent": "#39ff88",
     "omnibox": "#061405",
     "texture": ["#39ff88", "#00ff9c", "#9aa39f"],
@@ -415,6 +418,8 @@ def main():
         "address_text_on_omnibox": contrast(c["tab_text"], c["omnibox"]),
     }
     assert min(checks.values()) >= 7, checks
+    checks["active_tab_vs_frame"] = contrast(c["toolbar"], c["frame"])
+    assert checks["active_tab_vs_frame"] >= 2, checks
     gravity = "center" if alignment == "center" else "south"
     laptop = screen_preview(ntp, "laptop-1920", 1920, 960, ntp_bg, gravity)
     big = screen_preview(ntp, "43in-3840", 3840, 2040, ntp_bg, gravity)
